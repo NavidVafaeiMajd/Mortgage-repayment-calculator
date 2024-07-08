@@ -1,0 +1,100 @@
+@font-face {
+    font-family: Plus Jakarta Sans;
+    src: url(assets/fonts/PlusJakartaSans-VariableFont_wght.ttf);
+    font-weight: medium;
+}
+body{
+    font-family: Plus Jakarta Sans;
+    font-weight: meduim;
+    font-size: 16px;
+    background-color: hsl(202, 86%, 94%);
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: hsl(202, 55%, 16%);
+}
+input{
+    font-family: Plus Jakarta Sans;
+    width: 100%;
+}
+input[type=button], input[type=submit], input[type=reset]{
+    border: 0;
+    background-color: white;
+    cursor: pointer;
+}
+input[type=submit]{
+    font-weight: bold;
+    font-size: 16px;
+    background-color: hsl(61, 70%, 52%);
+    padding: 15px;
+    border-radius: 50px;
+    margin-top: 20px;
+
+}
+input[type=reset]{
+    width: 20%;
+    color: hsl(200, 24%, 40%);
+    text-decoration: underline;
+}
+input[type=number]{
+    padding: 10px 5px ;
+    border-radius: 5px;
+    border: 1px solid  hsl(200, 24%, 40%);
+    font-family: Plus Jakarta Sans;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 10px 0;
+}
+input[type=radio]{
+    width: auto;
+    margin: 0 10px ;
+}
+.forth-section-of-left-side {
+
+}
+.forth-section-of-left-side >label{
+    border: 1px solid  hsl(200, 24%, 40%);
+    display: flex;
+    align-items: center;
+    padding: 10px 5px ;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid  hsl(200, 24%, 40%);
+    width: 100%;
+
+}
+.main-content{
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    width: 50%;
+    overflow: hidden !important;
+
+
+    
+}
+.left-side{
+    width: 50% !important;
+    padding: 30px;
+}
+.right-side{
+    color: white;
+    text-align: center;
+    width: 50% !important;
+    padding: 30px;
+    background-color: hsl(202, 55%, 16%);
+    border-bottom-left-radius: 60px;
+}
+.first-section-of-left-side{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;}
+
+.third-section-of-left-side {
+        display: flex;
+        gap: 25px;
+}
+    
