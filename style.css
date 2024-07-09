@@ -94,11 +94,13 @@ input[type=radio]{
 }
 .right-side{
     color: white;
-    text-align: center;
     width: 50% !important;
     padding: 30px;
     background-color: hsl(202, 55%, 16%);
     border-bottom-left-radius: 60px;
+}
+.right-side-content{
+    text-align: center;
 }
 .first-section-of-left-side{
     display: flex;
@@ -108,4 +110,23 @@ input[type=radio]{
 .third-section-of-left-side {
         display: flex;
         gap: 25px;
+}
+div#right-side-result {
+    background-color: hsl(202deg 76.56% 10.79%);
+    max-width: 100%;
+    padding: 20px 0 20px 20px;
+    border-radius: 10px;
+    border-top: 4px solid hsl(61, 70%, 52%);
+}
+div#monthly-repayments >span{
+    font-weight: bold;
+    font-size: 3rem;
+    color: hsl(61, 70%, 52%);
+}
+div#monthly-repayments{
+    border-bottom: 1px solid gray;
+}
+div#total-repay>span{
+    font-weight: bold;
+    font-size: 1.5rem;
 }

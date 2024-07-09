@@ -15,26 +15,26 @@
       
       <form action="javascript: submitForm();" id="calculator">
         <div class="first-section-of-left-side">
-          <h1>Mortgage Calculator</h1>
+          <h2>Mortgage Calculator</h2>
           <input type="reset" value="Clear All">
         </div>
 
         <div class="secound-section-of-left-side">
           <label for="MortgageAmount">Mortgage Amount
-            <input name="MortgageAmount" id="MortgageAmount" type="number" value="" placeholder="EURO">
+            <input name="MortgageAmount" id="MortgageAmount" type="number" value="" placeholder="EURO" required>
           </label>
         </div>
 
         <div class="third-section-of-left-side">
           <div >
             <label  for="MortgageTerm">Mortgage Term
-              <input   type="number" name="MortgageTerm" id="MortgageTerm" placeholder="YEAR">
+              <input   type="number" name="MortgageTerm" id="MortgageTerm" placeholder="YEAR" required>
             </label>
           </div>
 
           <div id="interest-rate">
             <label for="InterestRate">Interest Rate
-              <input name="InterestRate" type="number" step=0.01 id="InterestRate" placeholder="PERCENT">
+              <input name="InterestRate" type="number" step=0.01 id="InterestRate" placeholder="PERCENT" required>
             </label>
             
           </div>
@@ -57,6 +57,20 @@
       </form>
     </div>
     <div class="right-side">
+      <!-- <h2>Your results</h2>
+      <p>  Your results are shown below based on the information you provided. 
+        To adjust the results, edit the form and click “calculate repayments” again.
+      </p>
+      <div id="right-side-result">
+        <div id="monthly-repayments">
+          <p>Your monthly repayments</p>
+          <span class="monthly-repayments">243242</span>
+        </div>
+        <div id="total-repay">
+          <p>Total you'll repay over the term </p>
+          <span>4234234322343</span>
+        </div>
+      </div> -->
       <div class="right-side-content">
         <img src="assets/images/illustration-empty.svg" alt="">
         <h1>Results shown here</h1>
