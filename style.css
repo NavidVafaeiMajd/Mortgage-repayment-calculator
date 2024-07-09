@@ -63,6 +63,7 @@ input[type=number] {
 input[type=radio]{
     width: auto;
     margin: 0 10px ;
+    accent-color: hsl(61, 70%, 52%);
 }
 
 .forth-section-of-left-side >label{
@@ -129,4 +130,41 @@ div#monthly-repayments{
 div#total-repay>span{
     font-weight: bold;
     font-size: 1.5rem;
+}
+@media screen and (max-width:1440px) {
+        
+        .main-content {
+            width: 70%;
+        }
+}@media screen and (max-width:940px) {
+        
+    .main-content {
+        width: 90%;
+    }
+}
+@media screen and (max-width:770px) {
+    .main-content {
+        flex-direction: column;
+        padding: 0;
+    }
+    
+    body {
+        padding: 20% 0;
+    }
+    
+    .left-side {
+        width: 90% !important;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0;
+        padding-bottom: 15px;
+    }
+    
+    .right-side {
+        width: 100% !important;
+        border-radius: inherit;
+        height: 100% !important;
+        padding: 5px;
+        border-radius: 0;
+    }
 }
