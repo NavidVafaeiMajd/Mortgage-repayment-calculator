@@ -47,14 +47,24 @@ input[type=number]{
     font-weight: bold;
     font-size: 16px;
     margin: 10px 0;
+    
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
 input[type=radio]{
     width: auto;
     margin: 0 10px ;
 }
-.forth-section-of-left-side {
 
-}
 .forth-section-of-left-side >label{
     border: 1px solid  hsl(200, 24%, 40%);
     display: flex;
@@ -64,6 +74,8 @@ input[type=radio]{
     border-radius: 5px;
     border: 1px solid  hsl(200, 24%, 40%);
     width: 100%;
+    cursor: pointer;
+
 
 }
 .main-content{
@@ -97,4 +109,3 @@ input[type=radio]{
         display: flex;
         gap: 25px;
 }
-    

@@ -5,45 +5,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->  
   <title> Mortgage repayment calculator</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+
 </head>
 <body>
 
   <div class="main-content">
     <div class="left-side">
       
-      <form action="">
+      <form action="javascript: submitForm();" id="calculator">
         <div class="first-section-of-left-side">
           <h1>Mortgage Calculator</h1>
           <input type="reset" value="Clear All">
         </div>
 
         <div class="secound-section-of-left-side">
-          <label for="">Mortgage Amount
-            <input type="number">
+          <label for="MortgageAmount">Mortgage Amount
+            <input name="MortgageAmount" id="MortgageAmount" type="number" value="" placeholder="EURO">
           </label>
         </div>
 
         <div class="third-section-of-left-side">
-          <div>
-            <label for="Mortgage Term">Mortgage Term
-              <input type="number" name="Mortgage Term">
+          <div >
+            <label  for="MortgageTerm">Mortgage Term
+              <input   type="number" name="MortgageTerm" id="MortgageTerm" placeholder="YEAR">
             </label>
           </div>
 
-          <div>
-            <label for="">Interest Rate
-              <input type="number">
+          <div id="interest-rate">
+            <label for="InterestRate">Interest Rate
+              <input name="InterestRate" type="number" step=0.01 id="InterestRate" placeholder="PERCENT">
             </label>
             
           </div>
 
         </div>
         <div class="forth-section-of-left-side">
-          <label for=""><input type="radio" name="forth" id="" value="">
+          <label for="Repayment"><input type="radio" name="Repayment" id="forth" checked ="">
             Repayment
             
           </label>
-          <label for=""><input type="radio" name="forth" id="">
+          <label for="InterestOnly"><input type="radio" name="InterestOnly" id="forth1">
             Interest Only
 
           </label>
